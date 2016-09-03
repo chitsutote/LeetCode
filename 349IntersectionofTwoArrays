@@ -1,0 +1,40 @@
+/****************************
+
+  Given two arrays, write a function to compute their intersection.
+
+Example:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+
+Note:
+Each element in the result must be unique.
+The result can be in any order.
+
+Thought:
+
+use hashmap to check
+
+
+ ****************************/
+
+class Solution {
+		public:
+				vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+						map<int,bool> mapNums;
+						vector<int> result;
+						map<int,bool>::iterator iter;
+
+						for(int i = 0 ; i < nums1.size();i++){
+								mapNums[(nums1[i])] = true; 
+						}
+						for(int j = 0 ; j < nums2.size();j++){
+								iter = mapNums.find(nums2[j]);
+								if(iter != mapNums.end()){ 
+										if(iter->second == true){
+												result.push_back(nums2[j]);
+												iter->second = false;
+										}
+								}
+						}
+						return result;
+				}
+};
