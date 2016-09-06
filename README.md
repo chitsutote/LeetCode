@@ -1,4 +1,5 @@
 # LeetCode
+* 169 Majority Element
 * 171 Excel Sheet Column Number
 * 242 Valid Anagram
 * 283 Move Zeroes
