@@ -1,6 +1,7 @@
 # LeetCode
 * 169 Majority Element
 * 171 Excel Sheet Column Number
+* 217 Contains Duplicate
 * 242 Valid Anagram
 * 283 Move Zeroes
 * 292 Nim Game 
