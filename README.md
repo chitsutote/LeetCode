@@ -8,4 +8,6 @@
 * 344 Reverse String
 * 349 Intersection of two Arrays
 * 383 Ransom Note
-* 389 Find the Difference 
+* 389 Find the Difference
+* 557 Reverse Words in a String III
+* 682 Baseball Game
