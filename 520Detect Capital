@@ -1,43 +1,18 @@
+
+
 class Solution {
 public:
     bool detectCapitalUse(string word) {
         
-        int sum = 0 ;
-        bool flag = true;
-        for(int i = 0 ; i < word.length();i++){
-            if( 'a' <= word[i] && word[i] <= 'z') sum++;
+        int capCount = 0;
+        int n = word.length();
+        for(int i = 0 ; i < word.length() ; i++){
+           if('A' <= word[i] && word[i] <= 'Z')  capCount++; 
         }
-         cout << sum << "cfafds" << word.length() << endl;
-        if(sum == word.length()){
-            cout << word << sum << endl;
-            return true;
-        }else{
-            sum = 0;
-        }
+        cout << capCount << "is" <<endl;
         
-        for(int i = 0 ; i < word.length();i++){
-            if( 'A' <= word[i] && word[i] <= 'Z') sum++;
-        }
-        
+        return !capCount || capCount==n ||  ( ('A'<= word[0] && word[0] <= 'Z') && (capCount == 1) );
+        // All lower cases || all uppercases || first is cap and only
        
-         if(sum == word.length()){
-            cout << word << sum  <<" "<< word.length()<< endl;
-            return true;
-        }else{
-             
-            sum = 1;
-        }
-        
-         for(int i = 1 ; i < word.length();i++){
-            if( ('A' <= word[0] && word[0] <= 'Z') && ('a' <= word[i] && word[i] <= 'z')) sum++;
-        }
-        
-         if(sum == word.length()){
-            return true;
-        }else{
-            sum = 0;
-        }
-        
-        return false;
     }
 };
