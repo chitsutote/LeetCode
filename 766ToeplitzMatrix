@@ -41,3 +41,22 @@ public:
         
     }
 };
+
+
+/****
+  網路上解法:  col=0那一行 與row=0 那一列 可以不用考慮 因為只會有單數個
+  從(1,1)開始 只要往左上有相同 掃完剩下的 就是Toeplitz Matrix
+
+***/
+
+class Solution {
+public:
+    bool isToeplitzMatrix(vector<vector<int>>& matrix) {
+        int m = matrix.size(), n = matrix[0].size();
+        for (int i = 1; i < m; i++)
+            for (int j = 1; j < n; j++)
+                if (matrix[i][j] != matrix[i - 1][j - 1])
+                    return false;
+        return true;
+    }
+};
