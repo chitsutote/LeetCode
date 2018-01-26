@@ -29,3 +29,38 @@ class Solution {
 						}
 				}
 };
+
+
+/****
+
+ zeroCnt for how many zero is moving to back
+ traverse from back , move every element forward 1 position when encountering 0
+ terminate from current position to total length minus zeroCnt
+ 
+
+
+****/
+
+
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        
+        int zeroCnt = 0;
+        for(int i = nums.size()-1 ; i >= 0 ; i--){
+            
+            if(nums[i] == 0){
+                zeroCnt++;
+                int j = i;
+                for(;j < (nums.size()-zeroCnt) ;j++){
+                   
+                    nums[j] = nums[j+1];
+                }
+                nums[j] = 0;
+            }
+           
+        }
+    }
+};
+
+
