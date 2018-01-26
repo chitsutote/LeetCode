@@ -1,0 +1,47 @@
+/***
+//  紀錄B裡面元素的index
+//  取出該元素在A的位置
+//  紀錄每個res[posA]  = posB
+//  
+//  如果倒過來先記錄A元素的index
+//  再去比對B，由於元素有重複 會造成有些位置沒被設定到
+//
+//    EX:
+//        A [21,5,74,5,74,21]
+//        B [21,5,74,74,5,21]
+//        mapA[ 5 -> 3,74 -> 4 ,21 -> 5]
+//
+//       B:  21 -> res[5] = 0, 5 -> res[3] = 1 ,74 -> res[4] = 2 , 74 -> res[4] = 3, 5 -> res[3] = 4, 21 -> res[5] = 5
+//       res中某些位置的元素就沒有被設定到 因而產生 res = {0,0,0,3,4,5}的情形
+***/
+class Solution {
+public:
+    vector<int> anagramMappings(vector<int>& A, vector<int>& B) {
+        
+        int n = A.size();
+        
+        //Initial with size of n
+        vector<int> res(n,0);
+        
+        map<int,int> Bpos;
+        map<int,int>::iterator it;
+        
+        //Record the index of B elements
+        for(int i = 0 ; i < n;i++){
+            Bpos[B[i]]=i;
+        }
+        
+        //find position of elementB  in A
+        for(int i = 0 ; i < n;i++){
+                it = Bpos.find(A[i]);
+            
+                //cout<< it->second;
+                //cout<<","<< i << endl;
+            
+                res[i] = it->second;
+            
+        }
+        
+        return res;
+    }
+};
