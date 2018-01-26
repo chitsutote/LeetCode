@@ -12,6 +12,7 @@
 * 461 Hamming Distance
 * 463 Island Perimeter
 * 557 Reverse Words in a String III
+* 561 Array Partition I
 * 760 Find Anagram Mappings
 * 682 Baseball Game
 * 728 Self Dividing Numbers
