@@ -1,0 +1,30 @@
+/**
+*         題目要求:  找出兩個數字在binary representation 上有幾個位元不同
+*
+*
+*         透過 xor 取出不同的位元， 再用mask = 1 去遮罩找出一個 1 就count 加一
+*
+*
+*
+*
+*
+*
+**/
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        int count = 0 ;
+        
+        int xorNum = x ^ y;
+        
+        while(xorNum > 0 ){
+            
+            if(xorNum & 1  == 1){
+                count++;
+            }
+            xorNum >>= 1;
+        }
+        
+        return count;
+    }
+};
