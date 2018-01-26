@@ -11,4 +11,5 @@
 * 389 Find the Difference
 * 463 Island Perimeter
 * 557 Reverse Words in a String III
+* 760 Find Anagram Mappings
 * 682 Baseball Game
