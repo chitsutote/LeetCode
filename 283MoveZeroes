@@ -8,6 +8,10 @@ Thought:
 adjust the sort method
 bubble sort used here
 
+too many redundant procedure
+
+4xx ms
+
  ******************/
 
 
@@ -37,7 +41,7 @@ class Solution {
  traverse from back , move every element forward 1 position when encountering 0
  terminate from current position to total length minus zeroCnt
  
-
+ 43ms
 
 ****/
 
