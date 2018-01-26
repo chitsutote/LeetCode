@@ -16,5 +16,6 @@
 * 760 Find Anagram Mappings
 * 682 Baseball Game
 * 728 Self Dividing Numbers
+* 766 Toeplitz Matrix
 
 
