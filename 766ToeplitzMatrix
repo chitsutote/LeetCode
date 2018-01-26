@@ -1,0 +1,43 @@
+/******
+*
+*   設立一個map 只要檢查過就設定為1
+*   到第二列的時候就不用再重複檢查
+*
+*
+*
+*
+*******/
+
+
+
+class Solution {
+public:
+    bool isToeplitzMatrix(vector<vector<int>>& matrix) {
+        int col = matrix.size();
+        int row = matrix[0].size();
+        
+        vector<vector<int>> map(col,vector<int>(row,0));
+ 
+        for(int i = 0;i < col; i++){
+            for(int j = 0 ; j < row ; j++){
+                if(map[i][j] == 1) continue;
+               
+                int x = i;
+                int y = j;
+                while(x+1 < col && y+1 < row){
+                    if(matrix[x][y] == matrix[x+1][y+1]){
+                        x++;
+                        y++;
+                        map[x][y] = 1;
+                    }else{
+                        return false;
+                    }
+                }
+            }
+          
+        }
+       
+        return true;
+        
+    }
+};
