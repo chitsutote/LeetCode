@@ -1,0 +1,34 @@
+class Solution {
+public:
+    int countPrimeSetBits(int L, int R) {
+        
+        int count = 0;
+        for(int i = L ; i <= R ; i++){
+            
+            if(isPrime(countBit(i))) count++;    
+        }
+        
+        return count;
+    }
+    //count bits
+    int countBit(int num){
+        int mask = 1;
+        int count = 0;
+        while(num > 0){
+            if(num & mask == 1) count++;
+            num >>= 1;
+        }
+        return count;
+    }
+    //check bits count is prime or not
+    bool isPrime(int num){
+        
+        if(num == 1) return false;
+        
+        for(int i = 2 ; i <= sqrt(num) ; i++){
+            
+            if(num % i == 0) return false;
+        }
+        return true;
+    }
+};
