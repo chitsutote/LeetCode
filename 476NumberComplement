@@ -1,0 +1,51 @@
+/**
+  count how many bit in binary representative for num
+  then use xor to toggle
+**/
+class Solution {
+public:
+    int findComplement(int num) {
+        
+        int mask = 1;
+        int cnt = bitCount(num);
+        //toggle one bit by one bit from the lowest bit
+        for(int i = 1; i <= cnt;i++){
+            num ^= mask;
+            mask <<=1;
+        }
+        
+        return num;
+    }
+    // count how many bits
+    int bitCount(int num){
+        int count = 0;
+        while(num > 0){
+            num /= 2;
+            count++;
+        }
+        
+        return count;
+        
+    }
+    
+};
+
+
+/****
+  
+  flip the from the highest bit,but the 0 before the most significant bit can't be flipped
+  (ex the 00000000000000000 of 00000000000000000101)
+  
+****/
+
+class Solution {
+public:
+    int findComplement(int num) {
+        bool start = false;
+        for (int i = 31; i >= 0; --i) {
+            if (num & (1 << i)) start = true;// reach the most significant bit
+            if (start) num ^= (1 << i);
+        }
+        return num;
+    }
+};
