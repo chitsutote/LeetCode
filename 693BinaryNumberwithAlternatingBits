@@ -1,0 +1,61 @@
+/***
+  cur: current bit
+  pre: previous bit
+  
+  using mask to filter out the bit, if pre equals to cur , return false
+  
+  
+
+**/
+class Solution {
+public:
+    bool hasAlternatingBits(int n) {
+        
+        int count = 0;
+        int pre = 0;
+        int cur = 0;
+        int mask = 1;
+        if(n & mask) pre = 1;
+        
+        while(n > 0){
+            if(count >= 1){
+                if(n & mask){
+                    cur = 1;
+                }else{
+                    cur = 0;
+                }
+                cout << "pre" << pre <<","<< cur << endl;
+                if(pre == cur) return false;
+                
+                pre = cur;
+            } 
+            n >>= 1;
+                      
+            count++;
+        }
+        
+        return true;
+    }
+};
+
+
+/***
+ reference answer
+ 01010101 XOR 10101010 becomes 11111111, just check all bits are 1
+ 
+***/
+class Solution {
+public:
+    bool hasAlternatingBits(int n) {
+        n ^= (n >> 1);
+        while (n)
+        {
+            if ((n & 1) == 0)
+                return false;
+            n >>= 1;
+        }
+        return true;
+    }
+};
+
+ 
