@@ -52,12 +52,7 @@ bool hasPath(int sum,TreeNode *t){
     if(!t->left && !t->right && sum == t->val) return true;
     
     sum -= t->val;
-     
-    
-    //(Only reach leaf node and sum equals to 0) is true , other situations is false;
-    if(t->left) res  = res || hasPath(sum,t->left);
-    if(t->right) res = res || hasPath(sum,t->right);
-        
+          
     return hasPath(sum,t->left) || hasPath(sum,t->right);
  }
  
