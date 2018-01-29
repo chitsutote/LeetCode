@@ -1,0 +1,66 @@
+Given a binary tree and a sum, 
+
+determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
+
+For example:
+Given the below binary tree and sum = 22,
+
+
+
+[-2,null,-3]
+-5
+
+              5
+             / \
+            4   8
+           /   / \
+          11  13  4
+         /  \      \
+        7    2      1
+return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
+
+
+
+bool hasPath(int sum,TreeNode *t){
+    
+    //If tree is null absolutely false
+    if(t == NULL) return false;
+    
+    bool res = false;
+    
+    //arrive leaf node and sum equals to 0
+    if(!t->left && !t->right && sum == t->val) return true;
+    
+    sum -= t->val;
+     
+    
+    //(Only reach leaf node and sum equals to 0) is true , other situations is false;
+    if(t->left) res  = res || hasPath(sum,t->left);
+    if(t->right) res = res || hasPath(sum,t->right);
+        
+    return res;
+ }
+ 
+// we can merge last 3 lines , making code more clean
+ 
+ bool hasPath(int sum,TreeNode *t){
+    
+    //If tree is null absolutely false
+    if(t == NULL) return false;
+    
+    //arrive leaf node and sum equals to 0
+    if(!t->left && !t->right && sum == t->val) return true;
+    
+    sum -= t->val;
+     
+    
+    //(Only reach leaf node and sum equals to 0) is true , other situations is false;
+    if(t->left) res  = res || hasPath(sum,t->left);
+    if(t->right) res = res || hasPath(sum,t->right);
+        
+    return hasPath(sum,t->left) || hasPath(sum,t->right);
+ }
+ 
+ 
+ 
+ 
