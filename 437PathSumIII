@@ -1,0 +1,57 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+ 
+ 
+ 
+ 
+ 
+class Solution {
+public:
+    int pathSum(TreeNode* root, int sum) {
+        
+        if(!root)  return 0;
+        
+        queue<TreeNode*> q;
+        q.push(root);
+        
+        int count = 0;
+        //Use BFS to find every possible path
+        while(!q.empty()){
+            TreeNode *tmp = q.front();
+            q.pop();
+       
+            count += findPath(sum,tmp);
+            if(tmp->left) q.push(tmp->left);
+            if(tmp->right) q.push(tmp->right);
+    
+         }
+        
+        return count;
+    }
+    
+    int findPath(int sum,TreeNode *t){
+            
+       
+            
+            int count = 0;
+  
+            if(!t) return count;
+  
+            //Since there are negative value in node,we cant return at this time
+            if(sum == t->val) count++;
+  
+            sum -= t->val;
+            if(t->left) count+=findPath(sum,t->left);
+            if(t->right) count+=findPath(sum,t->right);
+  
+            return count;
+            
+    }
+};
