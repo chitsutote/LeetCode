@@ -51,7 +51,7 @@ public:
         findPath(t->left,sum,route,res);
         findPath(t->right,sum,route,res);
         
-        //fail to be a part in the path,pop out
+        //try other route
         route.pop_back();
     }
 };
