@@ -1,5 +1,6 @@
 # LeetCode
 * 113 Path Sum II
+* 142 Linked List Cycle II
 * 169 Majority Element
 * 171 Excel Sheet Column Number
 * 217 Contains Duplicate
