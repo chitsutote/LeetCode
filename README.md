@@ -1,4 +1,5 @@
 # LeetCode
+* 1 Two Sum
 * 113 Path Sum II
 * 142 Linked List Cycle II
 * 169 Majority Element
