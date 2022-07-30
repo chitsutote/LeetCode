@@ -1,5 +1,6 @@
 # LeetCode
 * 1 Two Sum
+* 20 Valid Parenthese
 * 113 Path Sum II
 * 142 Linked List Cycle II
 * 169 Majority Element
