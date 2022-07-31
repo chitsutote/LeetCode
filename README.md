@@ -2,6 +2,7 @@
 * 1 Two Sum
 * 20 Valid Parenthese
 * 113 Path Sum II
+* 121 Best Time to Buy and Sell Stock
 * 142 Linked List Cycle II
 * 169 Majority Element
 * 171 Excel Sheet Column Number
