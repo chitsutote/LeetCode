@@ -27,6 +27,7 @@
 * 760 Find Anagram Mappings
 * 682 Baseball Game
 * 693 Binary Number with Alternating Bits
+* 704 Binary Search
 * 728 Self Dividing Numbers
 * 762 Prime Number of Set Bits in Binary Representation
 * 766 Toeplitz Matrix
