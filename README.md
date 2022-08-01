@@ -9,6 +9,7 @@
 * 169 Majority Element
 * 171 Excel Sheet Column Number
 * 217 Contains Duplicate
+* 226 Invert Binary Tree
 * 242 Valid Anagram
 * 257 Binary Tree Paths
 * 283 Move Zeroes
