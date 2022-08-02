@@ -2,6 +2,7 @@
 * 1 Two Sum
 * 20 Valid Parenthese
 * 21 Merge Two Sorted Lists
+* 53 Maximum Subarray
 * 125 Valid Palindrome
 * 113 Path Sum II
 * 121 Best Time to Buy and Sell Stock
