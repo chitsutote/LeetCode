@@ -6,6 +6,7 @@
 * 125 Valid Palindrome
 * 113 Path Sum II
 * 121 Best Time to Buy and Sell Stock
+* 141 Linked List Cycle
 * 142 Linked List Cycle II
 * 169 Majority Element
 * 171 Excel Sheet Column Number
