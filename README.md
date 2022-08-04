@@ -2,6 +2,7 @@
 * 1 Two Sum
 * 20 Valid Parenthese
 * 21 Merge Two Sorted Lists
+* 51 Insert Interval
 * 53 Maximum Subarray
 * 110 Balanced Binary Tree
 * 125 Valid Palindrome
