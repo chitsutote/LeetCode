@@ -37,3 +37,40 @@ class Solution {
 						return nums[majorIndex];
 				}
 };
+
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var majorityElement = function(nums) {
+    const sortedNums = nums.sort((a, b) => a-b);
+    
+    let cur = nums[0];
+    let compensate = 0;
+    let count = 0;
+    let max = {
+        ele: nums[0],
+        count: 0,
+    }
+    
+    for (let i = 0; i < sortedNums.length; i++) {
+        if (sortedNums[i] === cur) {
+            count++;     
+        }
+        
+        if (sortedNums[i] !== cur) { 
+            count = 1;
+            cur = sortedNums[i];
+        }
+        
+        if (count > max.count) {
+            max.ele = cur;
+            max.count = count;
+        }
+    }
+    
+    return max.ele;
+};
+```
