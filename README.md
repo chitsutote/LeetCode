@@ -7,6 +7,7 @@
 * 51 Insert Interval
 * 53 Maximum Subarray
 * 56 Merge Intervals
+* 75 Sort Colors
 * 110 Balanced Binary Tree
 * 125 Valid Palindrome
 * 113 Path Sum II
