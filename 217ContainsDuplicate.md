@@ -1,3 +1,47 @@
+- map
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+var containsDuplicate = function(nums) {
+    const map = {}
+    
+    for (let i = 0; i < nums.length; i++) {
+        const currentValue = map[nums[i]];
+        
+        if (currentValue) {
+           return true; 
+        } else {
+            map[nums[i]] = 1;
+        }  
+    }
+    
+    return false;
+};
+```
+
+- sort
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+var containsDuplicate = function(nums) {
+    
+    const sortedNums = nums.sort((a, b) => a - b);
+     
+    for (let i = 1; i < sortedNums.length; i++) {
+        if (sortedNums[i] === sortedNums[i-1]) return true;
+    }
+    
+    return false;
+};
+```
+
+
+# C++
+```cpp
 /****************************
 
 Given an array of integers, find if the array contains any duplicates. 
@@ -27,4 +71,6 @@ public:
         return false;
     }
 };
+```
   
+
