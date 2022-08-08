@@ -1,6 +1,7 @@
 # LeetCode
 * 1 Two Sum
 * 3 Longest Substrin Without Repeating Characters
+* 8 String to Integer (atoi)
 * 11 Container With Most Water
 * 15 3 Sum
 * 20 Valid Parenthese
