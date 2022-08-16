@@ -34,6 +34,7 @@
 * 389 Find the Difference
 * 409 Longest Palindrome
 * 437 Path Sum III
+* 438 Find All Anagrams in a String
 * 461 Hamming Distance
 * 463 Island Perimeter
 * 476 Number Complement
