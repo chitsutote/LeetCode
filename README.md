@@ -10,6 +10,7 @@
 * 39 Combination Sum
 * 51 Insert Interval
 * 53 Maximum Subarray
+* 54 Spiral Matrix
 * 56 Merge Intervals
 * 75 Sort Colors
 * 110 Balanced Binary Tree
