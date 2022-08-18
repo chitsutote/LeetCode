@@ -27,6 +27,7 @@
 * 238 Product of Array Except Self
 * 242 Valid Anagram
 * 257 Binary Tree Paths
+* 278 First Bad Version
 * 283 Move Zeroes
 * 292 Nim Game 
 * 344 Reverse String
