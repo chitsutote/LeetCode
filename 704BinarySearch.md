@@ -39,3 +39,34 @@ var search = function(nums, target) {
     return -1;
 };
 ```
+
+- Method 2
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var search = function(nums, target) {
+    let center = Math.floor(nums.length / 2);
+    let left = -1;
+    let right = nums.length;
+    
+    // early return will make runtime shorter
+    // if (nums.length === 1 && nums[0] === target) return 0;
+    
+    while ((right - left) > 1 && (left !== center || right !== center)) {
+        if (nums[center] === target) {
+            return center;
+        } else if (nums[center] > target) {
+            right = center;
+        } else if (nums[center] < target) {
+            left = center;      
+        }
+        
+        center = Math.floor((right + left)/2);
+    }
+    
+    return -1
+};
+```
