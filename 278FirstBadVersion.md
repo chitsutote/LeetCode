@@ -28,7 +28,6 @@ var solution = function(isBadVersion) {
             if (
                 isBadVersion(center)
                 && !isBadVersion(center-1)
-                && isBadVersion(center+1)
             ) {
                 return center;
             } else if (!isBadVersion(center)) {
