@@ -7,6 +7,7 @@
 * 15 3 Sum
 * 20 Valid Parenthese
 * 21 Merge Two Sorted Lists
+* 33 Search in Rotated Sorted Array
 * 39 Combination Sum
 * 51 Insert Interval
 * 53 Maximum Subarray
