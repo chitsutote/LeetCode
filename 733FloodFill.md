@@ -74,12 +74,8 @@ var floodFill = function(image, sr, sc, color) {
     const startingColor = image[sr][sc];
     
     while (queue.length != 0) {
-        console.log('teh queue', queue);
         const pixel = queue.shift();
         image[pixel.x][pixel.y] = color;
-        console.log('the current color', startingColor);
-        console.log('the pixel movement', pixel);
-        console.log('teh image', image);
         
         
         if (
