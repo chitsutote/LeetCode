@@ -1,5 +1,5 @@
 - Method - BFS
-	- will TLE, because same node would be push into queue 4 times at worst case
+1. will TLE, because same node would be push into queue 4 times at worst case
 ```javascript
 /**
  * @param {character[][]} grid
@@ -54,7 +54,7 @@ var numIslands = function(grid) {
     return islandCount;
 };
 ```
-	- improved version
+2. improved version
 ```javascript
 /**
  * @param {character[][]} grid
