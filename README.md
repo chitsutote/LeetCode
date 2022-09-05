@@ -22,6 +22,7 @@
 * 142 Linked List Cycle II
 * 169 Majority Element
 * 171 Excel Sheet Column Number
+* 207 Course Schedule
 * 217 Contains Duplicate
 * 226 Invert Binary Tree
 * 235 Lowest Common Ancestor of a Binary Search Tree
