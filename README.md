@@ -49,6 +49,7 @@
 * 682 Baseball Game
 * 693 Binary Number with Alternating Bits
 * 704 Binary Search
+* 721 Accounts Merge
 * 728 Self Dividing Numbers
 * 733 Flood Fill
 * 762 Prime Number of Set Bits in Binary Representation
