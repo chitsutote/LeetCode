@@ -34,6 +34,7 @@
 * 278 First Bad Version
 * 283 Move Zeroes
 * 292 Nim Game 
+* 310 Minimum Height Trees
 * 344 Reverse String
 * 349 Intersection of two Arrays
 * 383 Ransom Note
