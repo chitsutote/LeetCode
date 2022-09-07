@@ -14,6 +14,7 @@
 * 54 Spiral Matrix
 * 56 Merge Intervals
 * 75 Sort Colors
+* 79 Word Search
 * 110 Balanced Binary Tree
 * 125 Valid Palindrome
 * 113 Path Sum II
