@@ -20,8 +20,6 @@ var levelOrder = function(root) {
     
     let queueLength = queue.length;
     while (queueLength) {
-        queueLength = queue.length;
-        
         const sameLevelNode = [];
         for (let i = 0; i < queueLength; i++) {
             const node = queue.shift();
@@ -31,9 +29,8 @@ var levelOrder = function(root) {
             if (node.right) queue.push(node.right);
         }
         
-        if (sameLevelNode.length) {
-            result.push(sameLevelNode);
-        }
+        result.push(sameLevelNode);
+        queueLength = queue.length;
     }
     
     return result;
