@@ -48,6 +48,7 @@
 * 461 Hamming Distance
 * 463 Island Perimeter
 * 476 Number Complement
+* 543 Diameter of Binary Tree
 * 557 Reverse Words in a String III
 * 561 Array Partition I
 * 760 Find Anagram Mappings
