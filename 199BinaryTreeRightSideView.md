@@ -1,4 +1,4 @@
-- Method 1 - DFS
+- Method 1 - BFS
 ```javascript
 /**
  * Definition for a binary tree node.
