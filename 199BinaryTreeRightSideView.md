@@ -36,3 +36,38 @@ var rightSideView = function(root) {
     return result;
 };
 ```
+- Method 2 - DFS
+```javascript
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var rightSideView = function(root) {
+    let maxLevel = 0;
+    const result = [];
+    
+    function dfs (node, level, list) {
+        if (!node) return null
+        
+        if (maxLevel < level && node) {
+            maxLevel = level;
+            result.push(node.val);
+        }
+        
+        dfs(node.right, level+1, list);
+        dfs(node.left, level+1, list);
+    }
+    
+    dfs(root, 1, result);
+    
+    return result
+};
+```
