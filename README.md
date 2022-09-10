@@ -17,6 +17,7 @@
 * 79 Word Search
 * 98 Validate Binary Search Tree 
 * 102 Binary Tree Level Order Traversal
+* 104 Maximum Depth of Binary Tree
 * 110 Balanced Binary Tree
 * 125 Valid Palindrome
 * 113 Path Sum II
