@@ -1,3 +1,5 @@
+- CPP
+```cpp
 /**********************
 Question:
 
@@ -33,3 +35,32 @@ class Solution {
 						return true;
 				}
 };
+```
+
+- Javascript
+```javascript
+/**
+ * @param {string} ransomNote
+ * @param {string} magazine
+ * @return {boolean}
+ */
+var canConstruct = function(ransomNote, magazine) {
+    if (magazine.length < ransomNote.length) return false;
+    
+    const map = {};
+    
+    for (let i = 0; i < magazine.length; i++) {
+        map[magazine[i]] = (map[magazine[i]] || 0)+1;
+    }
+    
+    for (let i = 0; i < ransomNote.length; i++) {
+        if (map[ransomNote[i]] === undefined) return false;
+        
+        map[ransomNote[i]]--;
+        
+        if (map[ransomNote[i]] < 0) return false;
+    }
+    
+    return true;
+};
+```
