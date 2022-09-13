@@ -9,6 +9,7 @@
 * 21 Merge Two Sorted Lists
 * 33 Search in Rotated Sorted Array
 * 39 Combination Sum
+* 46 Permutations
 * 51 Insert Interval
 * 53 Maximum Subarray
 * 54 Spiral Matrix
