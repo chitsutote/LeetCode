@@ -15,6 +15,7 @@
 * 54 Spiral Matrix
 * 56 Merge Intervals
 * 75 Sort Colors
+* 78 Subsets
 * 79 Word Search
 * 98 Validate Binary Search Tree 
 * 102 Binary Tree Level Order Traversal
