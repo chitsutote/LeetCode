@@ -104,6 +104,37 @@ public:
 };
 ```
 
+- Method 3
+```javascript
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isValid = function(s) {
+    if (s.length % 2 === 1) return false;
+    
+    const map = {
+        '(': ')',
+        '{': '}',
+        '[': ']',
+    }
+    
+    const stack = [];
+    
+    for (let ele of s) {
+        if (ele === ')' || ele === ']' || ele === '}') {
+            const left = stack.pop();
+            
+            if (map[left] !== ele) return false;
+        } else {
+            stack.push(ele);
+        }
+    }
+    
+    return stack.length ? false : true;
+};
+```
+
 
 - NOTE
 1. Build more test cases to validate solution.
