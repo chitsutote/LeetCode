@@ -29,6 +29,7 @@
 * 133 Clone Graph
 * 141 Linked List Cycle
 * 142 Linked List Cycle II
+* 146 LRU Cache
 * 150 Evaluate Reverse Polish Notation
 * 169 Majority Element
 * 171 Excel Sheet Column Number
