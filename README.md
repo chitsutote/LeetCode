@@ -31,6 +31,7 @@
 * 142 Linked List Cycle II
 * 146 LRU Cache
 * 150 Evaluate Reverse Polish Notation
+* 155 Min Stack
 * 169 Majority Element
 * 171 Excel Sheet Column Number
 * 199 Binary Tree Right Side View
