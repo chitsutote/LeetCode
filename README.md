@@ -63,13 +63,13 @@
 * 543 Diameter of Binary Tree
 * 557 Reverse Words in a String III
 * 561 Array Partition I
-* 760 Find Anagram Mappings
 * 682 Baseball Game
 * 693 Binary Number with Alternating Bits
 * 704 Binary Search
 * 721 Accounts Merge
 * 728 Self Dividing Numbers
 * 733 Flood Fill
+* 760 Find Anagram Mappings
 * 762 Prime Number of Set Bits in Binary Representation
 * 766 Toeplitz Matrix
 * 876 Middle of the Linked List
