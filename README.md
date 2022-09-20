@@ -63,6 +63,7 @@
 * 543 Diameter of Binary Tree
 * 557 Reverse Words in a String III
 * 561 Array Partition I
+* 621 Task Scheduler
 * 682 Baseball Game
 * 693 Binary Number with Alternating Bits
 * 704 Binary Search
