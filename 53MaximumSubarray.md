@@ -47,3 +47,26 @@ var maxSubArray = function(nums) {
     return maxValue;
 };
 ```
+
+-- Method 3 - Dynamic programming
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var maxSubArray = function(nums) {
+    const accumValue = Array.from({ length: nums.length + 1 }, () => 0);
+    let maxValue = -Infinity;
+    accumValue[0] = -Infinity;
+    
+    for (let i = 0; i < nums.length; i++) {
+        accumValue[i+1] = accumValue[i] > 0 ? accumValue[i] + nums[i] : nums[i];
+    }
+    
+    for (let i = 0; i < accumValue.length; i++) {
+        maxValue = Math.max(maxValue, accumValue[i]);
+    }
+    
+    return maxValue;
+};
+```
