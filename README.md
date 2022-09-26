@@ -52,6 +52,7 @@
 * 283 Move Zeroes
 * 292 Nim Game 
 * 310 Minimum Height Trees
+* 322 Coin Change
 * 344 Reverse String
 * 349 Intersection of two Arrays
 * 383 Ransom Note
