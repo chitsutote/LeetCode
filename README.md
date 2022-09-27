@@ -15,6 +15,7 @@
 * 53 Maximum Subarray
 * 54 Spiral Matrix
 * 56 Merge Intervals
+* 62 Unique Paths
 * 70 Climbing Stairs
 * 75 Sort Colors
 * 78 Subsets
